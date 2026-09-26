@@ -1,0 +1,22 @@
+{
+  "research": [
+    "stellar-radiative-transfer-radmc3d.md",
+    "stellar-evolution-nucleosynthesis.md",
+    "stellar-sunspot-forecasting-ml.md",
+    "cosmology-foreground-removal-gpr.md",
+    "cosmology-parameter-estimation-mcmc.md",
+    "nuclear-kinematics-two-body.md",
+    "nuclear-monte-carlo-geant4.md",
+    "nuclear-resonance-rmatrix.md",
+    "nuclear-ml-astrophysics.md"
+  ],
+  "musings": [
+    "happiness.md",
+    "shell.md",
+    "hierarchy.md",
+    "pretty_forevers.md",
+    "rasta.md",
+    "asche_bochor.md",
+    "stellar_evolution.md"
+  ]
+}

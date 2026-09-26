@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanchari Sen</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="top-nav">
+    <div class="brand">SANCHARI SEN</div>
+    <nav class="nav-links">
+      <a href="#" class="nav-link active" data-target="home">Home</a>
+      <a href="#" class="nav-link" data-target="research">Research</a>
+      <a href="#" class="nav-link" data-target="musings">Musings</a>
+      <a href="#" class="nav-link" data-target="photography">Photography</a>
+    </nav>
+  </header>
+
+  <main class="content-container">
+
+    <!-- PAGE 1: HOME -->
+    <section id="home" class="page-section active">
+      <h1 class="main-title">Hi, I am<br><span class="name-heading">Sanchari Sen</span></h1>
+      <div class="role-subtitle">ASTROPHYSICIST IN TRAINING • PHOTOGRAPHER</div>
+
+      <div class="home-grid">
+        <div class="home-text">
+          <p class="hero-description">
+            I am an M.Sc Physics student at Heidelberg University, working in stellar astrophysics, fascinated by how stars are born, evolve, and die. After exploring experimental nuclear physics along the way, I've settled with the stars. Growing up in my city of joy—Kolkata—and now living in quieter Heidelberg, I also carry a camera to capture the contrasts around me.
+          </p>
+        </div>
+
+        <div class="home-image-wrapper">
+          <img src="images/profile.jpg" alt="Sanchari Sen" class="hero-photo">
+        </div>
+      </div>
+
+      <!-- My journey so far -->
+      <div class="journey-subsection">
+        <h3 class="subsection-heading">My journey so far</h3>
+        <div class="journey-label"></div>
+
+        <div class="journey-list">
+          <div class="journey-item">
+            <div class="journey-rail">
+              <div class="journey-date">2025–Present</div>
+              <div class="journey-dot"></div>
+            </div>
+            <div class="journey-body">
+              <h4 class="journey-title">M.Sc. in Physics (Astrophysics Specialization)</h4>
+              <p class="journey-desc">Heidelberg University, Germany — Master's thesis research on stellar physics, structure, and binary evolution models.</p>
+            </div>
+          </div>
+
+          <div class="journey-item">
+            <div class="journey-rail">
+              <div class="journey-date">2022–2025</div>
+              <div class="journey-dot"></div>
+            </div>
+            <div class="journey-body">
+              <h4 class="journey-title">B.Sc. in Physics</h4>
+              <p class="journey-desc">St. Xavier's College, Kolkata — Dissertation on Stellar Evolution, Nucleosynthesis, and Isochrone Fitting with MIST models.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-action">
+          <a href="https://drive.google.com/file/d/1yfOrg6N6oXD6npZL2r2BLIOSBV9eNSVN/view?usp=drive_link" target="_blank" class="cv-button">Download full CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: RESEARCH -->
+    <section id="research" class="page-section">
+      <h2 class="section-heading">Research Projects</h2>
+
+      <!-- List view: auto-built from content/research/*.md via manifest.json -->
+      <div id="research-list" class="post-list"></div>
+
+      <!-- Detail view: shown when a card is clicked, hidden otherwise -->
+      <div id="research-detail" class="post-detail" hidden></div>
+    </section>
+
+    <!-- PAGE 4: MUSINGS -->
+    <section id="musings" class="page-section">
+      <h2 class="section-heading">Musings</h2>
+
+      <!-- List view: two columns, built from content/musings/*.md (category: sky | under-sky) -->
+      <div id="musings-list" class="musings-two-sides">
+        <div class="musings-column">
+          <h3 class="column-header">Everything in the sky</h3>
+          <div id="musings-list-sky" class="post-list"></div>
+        </div>
+        <div class="musings-column">
+          <h3 class="column-header">Everything under the sky</h3>
+          <div id="musings-list-underksy" class="post-list"></div>
+        </div>
+      </div>
+
+      <!-- Detail view: shown when a card is clicked, hidden otherwise -->
+      <div id="musings-detail" class="post-detail" hidden></div>
+    </section>
+
+    <!-- PAGE 5: PHOTOGRAPHY -->
+    <section id="photography" class="page-section">
+      <h2 class="section-heading">Photography</h2>
+      <p class="section-intro-text">Gallery coming soon.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://github.com/Sanchari-Sen" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://de.linkedin.com/in/sanchari-sen-882948250" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:sanchariofficial13@gmail.com">Email</a>
+    </div>
+    <div class="footer-copyright">© 2026 Sanchari Sen. All rights reserved.</div>
+  </footer>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
